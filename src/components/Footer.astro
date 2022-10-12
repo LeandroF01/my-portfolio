@@ -1,0 +1,33 @@
+---
+import github from "../utils/img/icon/github-svgrepo-com.svg";
+import link from "../utils/img/icon/linkedin-svgrepo-com.svg";
+import gmail from "../utils/img/icon/google-gmail.svg";
+---
+
+<footer
+  class="text-gray-900 w-full h-60 flex text-center justify-center bg-[#fdfdfd]"
+>
+  <div class="flex-col m-auto">
+    <p class="flex">
+      <img src={gmail} alt="gmail" class="w-7 mr-1" /> leandro.dev.fa@gmail.com
+    </p>
+    <ul class="flex justify-center mt-10">
+      <li class="w-8 mr-2">
+        <a
+          href="https://github.com/LeandroF01"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src={github} alt="github" />
+        </a>
+      </li>
+      <li class="w-8 mr-2">
+        <a
+          href="https://www.linkedin.com/in/leandro-farias01/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src={link} alt="linkedin" />
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
