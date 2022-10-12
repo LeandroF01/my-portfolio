@@ -1,0 +1,27 @@
+---
+import cv from "../style/assets/CV-LEANDRO-FARIAS.pdf";
+---
+
+<nav
+  class="justify-center bg-nav text-gray-50 py-3 bg-contain bg-center fixed z-10"
+>
+  <ul class="flex justify-center mx-auto">
+    <li>
+      <a href="#home" class="bg-hover bg-center text-sm">Home</a>
+    </li>
+    <li>
+      <a href="#portfolio" class="bg-hover bg-center text-sm text-center"
+        >Portfolio</a
+      >
+    </li>
+    <li class="relative">
+      <div class="bg-download w-40 h-24 top-[-2em] relative">
+        <a
+          class="text-center absolute top-[2em] right-8 hover:text-[#fec070]"
+          href={cv}
+          download="Cv-Leandro-Farias">Dowload CV</a
+        >
+      </div>
+    </li>
+  </ul>
+</nav>
