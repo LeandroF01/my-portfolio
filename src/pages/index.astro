@@ -1,7 +1,57 @@
 ---
+import Footer from "../components/Footer.astro";
+import Nav from "../components/Nav.astro";
 import Layout from "../layouts/Layout.astro";
+import Abilities from "../components/Abilities.astro";
+import { SliderScroll } from "../components/React/SliderScroll";
 ---
 
-<Layout title="Welcome to Astro.">
-  <main></main>
+<Layout>
+  <div class="bg-fond">
+    <main>
+      <Nav />
+    </main>
+
+    <header
+      id="home"
+      class="flex justify-center text-center h-screen font-boldbg-gradient-to-r"
+    >
+      <section
+        class="flex felx-col justify-center bg-initial w-[52em] h-[30em] m-auto"
+      >
+        <article class="m-auto">
+          <h1
+            class="font-semibold pt-16 text-transparent text-8xl bg-clip-text bg-gradient-to-r from-[#df902f] to-[#fdc085]"
+          >
+            Leandro Farias
+          </h1>
+          <h2 class="text-[#fec070] text-xl font-medium">
+            Desarrollo Web Front End
+          </h2>
+          <section class="flex bg-perg w-[21em] h-[16em] m-auto">
+            <p
+              class="w-[21em] p-5 m-auto text-center text-amber-900 max-w-lg font-medium text-sm"
+            >
+              Hello!! My name is Leandro Farias. I work as a Front End Web
+              Developer. I am a proactive person, very flexible, responsible and
+              dedicated, with a quick adaptation to new technologies and
+              development teams. I also have an apprenticeship for the future
+              success of the company.
+            </p>
+          </section>
+        </article>
+      </section>
+    </header>
+    <section id="portfolio">
+      <Abilities />
+
+      <SliderScroll client:visible />
+      <div class="relative">
+        <div class="absolute top-[-20em] bg-cloud w-full h-[20em]"></div>
+        <div class="absolute top-[-17em] bg-cloud w-full h-[20em]"></div>
+      </div>
+
+      <Footer />
+    </section>
+  </div>
 </Layout>
